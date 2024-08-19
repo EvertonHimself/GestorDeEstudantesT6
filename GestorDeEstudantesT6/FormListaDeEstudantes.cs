@@ -86,6 +86,7 @@ namespace GestorDeEstudantesT6
         private void buttonAtualizar_Click(object sender, EventArgs e)
         {
             // Atualiza a lista de alunos.
+
         }
 
         private void dataGridViewListaDeEstudantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
