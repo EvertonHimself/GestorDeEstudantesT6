@@ -35,5 +35,10 @@ namespace GestorDeEstudantesT6
                 new FormAtualizarApagarAlunos();
             formAtualizarApagarAlunos.Show();
         }
+
+        private void estatísticasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
