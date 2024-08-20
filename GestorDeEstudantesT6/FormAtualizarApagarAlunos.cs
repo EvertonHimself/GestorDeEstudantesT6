@@ -142,10 +142,6 @@ namespace GestorDeEstudantesT6
 
 
 
-        private void textBoxId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void FormAtualizarApagarAlunos_Load(object sender, EventArgs e)
         {
@@ -205,6 +201,20 @@ namespace GestorDeEstudantesT6
                 // reconstrói a imagem com base em um "memory stream".
                 pictureBoxFoto.Image = Image.FromStream(fotoDoAluno);
 
+            }
+        }
+
+        private void textBoxId_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBoxId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) &&
+                !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

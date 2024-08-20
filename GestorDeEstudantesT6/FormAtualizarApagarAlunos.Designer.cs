@@ -233,6 +233,7 @@
             this.textBoxId.Size = new System.Drawing.Size(79, 20);
             this.textBoxId.TabIndex = 38;
             this.textBoxId.TextChanged += new System.EventHandler(this.textBoxId_TextChanged);
+            this.textBoxId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxId_KeyPress);
             // 
             // label7
             // 
@@ -279,7 +280,8 @@
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label2);
             this.Name = "FormAtualizarApagarAlunos";
-            this.Text = "FormAtualizarApagarAlunos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SGA - Atualizar e Apagar";
             this.Load += new System.EventHandler(this.FormAtualizarApagarAlunos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
