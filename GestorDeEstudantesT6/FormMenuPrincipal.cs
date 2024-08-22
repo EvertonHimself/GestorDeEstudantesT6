@@ -38,7 +38,8 @@ namespace GestorDeEstudantesT6
 
         private void estatísticasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormEstastisticas formEstastisticas = new FormEstastisticas();
+            formEstastisticas.Show();
         }
     }
 }

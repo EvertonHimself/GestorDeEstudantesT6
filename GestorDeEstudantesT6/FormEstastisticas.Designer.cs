@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panelTotalDeAlunos = new System.Windows.Forms.Panel();
-            this.panelMeninos = new System.Windows.Forms.Panel();
-            this.panelMeninas = new System.Windows.Forms.Panel();
             this.labelTotalDeAlunos = new System.Windows.Forms.Label();
+            this.panelMeninos = new System.Windows.Forms.Panel();
             this.labelMeninos = new System.Windows.Forms.Label();
+            this.panelMeninas = new System.Windows.Forms.Panel();
             this.labelMeninas = new System.Windows.Forms.Label();
             this.panelTotalDeAlunos.SuspendLayout();
             this.panelMeninos.SuspendLayout();
@@ -48,24 +48,6 @@
             this.panelTotalDeAlunos.Size = new System.Drawing.Size(734, 191);
             this.panelTotalDeAlunos.TabIndex = 0;
             // 
-            // panelMeninos
-            // 
-            this.panelMeninos.BackColor = System.Drawing.Color.Cyan;
-            this.panelMeninos.Controls.Add(this.labelMeninos);
-            this.panelMeninos.Location = new System.Drawing.Point(12, 209);
-            this.panelMeninos.Name = "panelMeninos";
-            this.panelMeninos.Size = new System.Drawing.Size(364, 229);
-            this.panelMeninos.TabIndex = 1;
-            // 
-            // panelMeninas
-            // 
-            this.panelMeninas.BackColor = System.Drawing.Color.Fuchsia;
-            this.panelMeninas.Controls.Add(this.labelMeninas);
-            this.panelMeninas.Location = new System.Drawing.Point(382, 209);
-            this.panelMeninas.Name = "panelMeninas";
-            this.panelMeninas.Size = new System.Drawing.Size(364, 229);
-            this.panelMeninas.TabIndex = 2;
-            // 
             // labelTotalDeAlunos
             // 
             this.labelTotalDeAlunos.AutoSize = true;
@@ -75,6 +57,17 @@
             this.labelTotalDeAlunos.Size = new System.Drawing.Size(232, 29);
             this.labelTotalDeAlunos.TabIndex = 0;
             this.labelTotalDeAlunos.Text = "Total de Alunos: 999";
+            this.labelTotalDeAlunos.MouseEnter += new System.EventHandler(this.labelTotalDeAlunos_MouseEnter);
+            this.labelTotalDeAlunos.MouseLeave += new System.EventHandler(this.labelTotalDeAlunos_MouseLeave);
+            // 
+            // panelMeninos
+            // 
+            this.panelMeninos.BackColor = System.Drawing.Color.Cyan;
+            this.panelMeninos.Controls.Add(this.labelMeninos);
+            this.panelMeninos.Location = new System.Drawing.Point(12, 209);
+            this.panelMeninos.Name = "panelMeninos";
+            this.panelMeninos.Size = new System.Drawing.Size(364, 229);
+            this.panelMeninos.TabIndex = 1;
             // 
             // labelMeninos
             // 
@@ -85,6 +78,17 @@
             this.labelMeninos.Size = new System.Drawing.Size(165, 29);
             this.labelMeninos.TabIndex = 1;
             this.labelMeninos.Text = "Meninos: 50%";
+            this.labelMeninos.MouseEnter += new System.EventHandler(this.labelMeninos_MouseEnter);
+            this.labelMeninos.MouseLeave += new System.EventHandler(this.labelMeninos_MouseLeave);
+            // 
+            // panelMeninas
+            // 
+            this.panelMeninas.BackColor = System.Drawing.Color.Fuchsia;
+            this.panelMeninas.Controls.Add(this.labelMeninas);
+            this.panelMeninas.Location = new System.Drawing.Point(382, 209);
+            this.panelMeninas.Name = "panelMeninas";
+            this.panelMeninas.Size = new System.Drawing.Size(364, 229);
+            this.panelMeninas.TabIndex = 2;
             // 
             // labelMeninas
             // 
@@ -107,6 +111,7 @@
             this.Name = "FormEstastisticas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SGA - Estatísticas";
+            this.Load += new System.EventHandler(this.FormEstastisticas_Load);
             this.panelTotalDeAlunos.ResumeLayout(false);
             this.panelTotalDeAlunos.PerformLayout();
             this.panelMeninos.ResumeLayout(false);
